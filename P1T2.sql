@@ -6,3 +6,7 @@ VALUES ('sarah', 'zemirli', 'sarah.zemirli@example.fr', 'alger');
 UPDATE customers 
 SET city = 'Montreal' 
 WHERE first_name = 'sarah' AND last_name = 'zemirli';
+
+-- Deleting an inactive customer
+DELETE FROM customers 
+WHERE first_name = 'sarah' AND last_name = 'zemirli';
